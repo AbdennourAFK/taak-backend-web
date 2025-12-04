@@ -58,5 +58,6 @@
 
                 
             </div>
+            {{ $posts->onEachSide(1)->links() }}
         </div>
 </x-app-layout>
