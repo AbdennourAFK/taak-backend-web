@@ -30,7 +30,7 @@
     <div class="mt-8 p-6 text-gray-900">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 
-                    @foreach ($posts as $post )
+                    @forelse ($posts as $post )
                     
 
 <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
@@ -52,8 +52,9 @@
 
 
                         
-                    @endforeach
-                    
+                    @empty
+                    <div><p class= "text-center">No posts found</p></div>
+                    @endforelse
 
 
                 
